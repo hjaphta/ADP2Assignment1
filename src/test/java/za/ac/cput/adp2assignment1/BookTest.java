@@ -38,10 +38,10 @@ public class BookTest {
     public void testEquality(){
         assertEquals(book0,book3);
     }
-    
+
     //Identity
     @Test
-    public void TestIdentity(){
+    public void testIdentity(){
         assertSame(book0,book3);
     }
     
@@ -52,17 +52,23 @@ public class BookTest {
         fail("This test will fail");
     }
     
-    
-    @AfterEach
-    public void tearDown() {
-    }
-    
-    //Disable test
-    @Disabled
+     //Disable test
+      @Disabled("i dont want to test this")
+      @Test
+      public void testWillBeIgnored(){
+          assertEquals(book0,book3);
+       }
+          
+    // fails if execution exceeds 20 seconds
     @Test
-    public void testSomeMethod() {
-        assertSame(book1,book2);
-        fail("The test case is a prototype.");
-    }
+    @Timeout(20)
+    public void timeOutTest(){
+     book3=book1;
+     assertSame(book3,book1);
+  }
+   
+      }
+
     
-}
+    
+
