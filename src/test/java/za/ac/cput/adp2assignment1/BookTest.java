@@ -10,7 +10,11 @@ package za.ac.cput.adp2assignment1;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
+import org.junit.jupiter.api.Disabled;
+
 import static org.junit.jupiter.api.Assertions.*;
+
 
 
 public class BookTest {
@@ -53,9 +57,11 @@ public class BookTest {
     public void tearDown() {
     }
     
+    //Disable test
+    @Disabled
     @Test
     public void testSomeMethod() {
-        // TODO review the generated test code and remove the default call to fail.
+        assertSame(book1,book2);
         fail("The test case is a prototype.");
     }
     
