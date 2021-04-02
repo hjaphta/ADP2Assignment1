@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: za.ac.cput.adp2assignment1.BookTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec <<< FAILURE!
+za.ac.cput.adp2assignment1.BookTest.testFail()  Time elapsed: 0.002 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: This test will fail
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:118)
+	at za.ac.cput.adp2assignment1.BookTest.testFail(BookTest.java:52)
+
